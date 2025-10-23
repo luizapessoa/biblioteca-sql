@@ -31,4 +31,5 @@ Livro e Empréstimo (1:N): Um livro pode estar associado a vários empréstimos 
 
 Abaixo está a representação visual do esquema do banco de dados:
 
-<img width="1094" height="733" alt="image" src="https://github.com/user-attachments/assets/d7593b2b-62c1-4be3-aa48-484cefb4969b" />
+<img width="1137" height="738" alt="image" src="https://github.com/user-attachments/assets/5b766659-cab2-424a-bd49-285e2a9b3387" />
+
