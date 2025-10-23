@@ -1,12 +1,12 @@
 # biblioteca-sql
-Projeto: Banco de Dados de Biblioteca (MySQL)
-Este projeto é um exercício de modelagem de dados e prática de SQL, focado na criação de um banco de dados simples para um sistema de biblioteca. O esquema foi desenvolvido utilizando o MySQL Workbench.
+# Projeto: Banco de Dados de Biblioteca (MySQL)
+## Este projeto é um exercício de modelagem de dados e prática de SQL, focado na criação de um banco de dados simples para um sistema de biblioteca. O esquema foi desenvolvido utilizando o MySQL Workbench.
 
 O objetivo principal foi aplicar e revisar conceitos de SQL, incluindo a definição de tabelas, chaves primárias, chaves estrangeiras e os relacionamentos entre elas.
 
 ---
 
-Entidades
+# Entidades
 
 O banco de dados é composto por quatro entidades principais:
 
@@ -20,7 +20,7 @@ emprestimo: Tabela que registra o histórico de empréstimos, ligando usuario e 
 
 ---
 
-Regras de Relacionamento
+# Regras de Relacionamento
 
 Os relacionamentos definidos no diagrama (DER) seguem estas regras de negócio:
 
@@ -32,7 +32,7 @@ Livro e Empréstimo (1:N): Um livro pode estar associado a vários empréstimos 
 
 ---
 
-Diagrama Entidade-Relacionamento (DER)
+# Diagrama Entidade-Relacionamento (DER)
 
 Abaixo está a representação visual do esquema do banco de dados:
 
