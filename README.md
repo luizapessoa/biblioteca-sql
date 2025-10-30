@@ -97,11 +97,3 @@ JOIN emprestimo ON livro.id_livro = emprestimo.id_livro
 JOIN usuario ON emprestimo.id_usuario = usuario.id_usuario
 WHERE usuario.nome = 'Maria Oliveira';
 ```
----
-
-## 🧠 Conceitos Reforçados:
-- Filtros com WHERE e LIKE
-- Relacionamentos com JOIN
-- Agrupamentos com GROUP BY
-- Ordenação e limitação de resultados
-- Integração entre múltiplas tabelas
