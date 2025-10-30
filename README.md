@@ -37,10 +37,12 @@ Abaixo está a representação visual do esquema do banco de dados:
 
 ## Estrutura do projeto
 
-📦 biblioteca-sql
- ┣ 📜 schema.sql
- ┣ 📜 consultas.sql
- ┗ 📜 README.md
+Abaixo está a estrutura de arquivos contidos neste repositório:
+
+* `biblioteca-sql/`
+    * `schema.sql`: Contém o script de criação de todas as tabelas (DDL).
+    * `consultas.sql`: Contém todas as consultas de prática (DML).
+    * `README.md`: Este arquivo.
 
 ## Consultas e Exemplos de SQL
 
