@@ -38,9 +38,9 @@ Abaixo está a representação visual do esquema do banco de dados:
 ## Estrutura do projeto
 
 📦 biblioteca-sql
- ┣ 📜 schema.sql         # Estrutura do banco de dados
- ┣ 📜 consultas.sql      # Conjunto de consultas de teste
- ┗ 📜 README.md          # Documentação do projeto
+ ┣ 📜 schema.sql
+ ┣ 📜 consultas.sql
+ ┗ 📜 README.md
 
 ## Consultas e Exemplos de SQL
 
