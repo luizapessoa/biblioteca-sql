@@ -33,3 +33,73 @@ Abaixo está a representação visual do esquema do banco de dados:
 
 <img width="1137" height="738" alt="image" src="https://github.com/user-attachments/assets/5b766659-cab2-424a-bd49-285e2a9b3387" />
 
+---
+
+## Estrutura do projeto
+
+📦 biblioteca-sql
+ ┣ 📜 schema.sql         # Estrutura do banco de dados
+ ┣ 📜 consultas.sql      # Conjunto de consultas de teste
+ ┗ 📜 README.md          # Documentação do projeto
+
+## Consultas e Exemplos de SQL
+
+Este projeto demonstra a aplicação prática de consultas SQL para análise de dados em um banco de dados de biblioteca.
+O banco foi testado com 14 consultas, abordando desde filtros simples (WHERE, LIKE) até análises mais avançadas com JOIN, GROUP BY e funções de agregação.
+
+🔗 **[Veja o script completo com todas as 14 consultas aqui](./consultas-.sql)**
+
+### Exemplos de Consultas  
+
+#### 1. Consulta simples com `SELECT`  
+**Objetivo:** Encontrar todos os livros do gênero *Suspense*.  
+
+```
+SELECT titulo, genero 
+FROM livro 
+WHERE genero = 'Suspense';
+```
+
+#### 2. Consulta com JOIN
+
+**Objetivo:** Descobrir o nome de todos os livros escritos pelo autor Rafael Montes.
+
+```SELECT livro.titulo, autor.nome 
+FROM livro 
+JOIN autor ON autor.id_autor = livro.id_autor
+WHERE autor.nome = 'Rafael Montes';
+```
+
+#### 3. Consulta com GROUP BY e Função de Agregação
+
+**Objetivo:** Encontrar qual é o livro mais emprestado.
+
+```
+SELECT livro.titulo, COUNT(*) AS livro_mais_emprestado
+FROM livro 
+JOIN emprestimo ON livro.id_livro = emprestimo.id_livro
+GROUP BY livro.titulo
+ORDER BY livro_mais_emprestado DESC
+LIMIT 1;
+```
+
+#### 4. Consulta com Múltiplos Relacionamentos
+
+**Objetivo:** Exibir o nome do autor do livro que o usuário Maria Oliveira pegou emprestado.
+
+```
+SELECT autor.nome 
+FROM autor 
+JOIN livro ON autor.id_autor = livro.id_autor
+JOIN emprestimo ON livro.id_livro = emprestimo.id_livro
+JOIN usuario ON emprestimo.id_usuario = usuario.id_usuario
+WHERE usuario.nome = 'Maria Oliveira';
+```
+---
+
+## 🧠 Conceitos Reforçados:
+- Filtros com WHERE e LIKE
+- Relacionamentos com JOIN
+- Agrupamentos com GROUP BY
+- Ordenação e limitação de resultados
+- Integração entre múltiplas tabelas
