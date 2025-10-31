@@ -1,7 +1,13 @@
 # 📚 biblioteca-sql - Projeto: Banco de Dados de Biblioteca (MySQL)
 
-Este projeto é um exercício de modelagem de dados e prática de SQL, focado na criação de um banco de dados simples para um sistema de biblioteca. O esquema foi desenvolvido utilizando o MySQL Workbench.
-O objetivo principal foi aplicar e revisar conceitos de SQL, incluindo a definição de tabelas, chaves primárias, chaves estrangeiras e os relacionamentos entre elas.
+# biblioteca-sql  
+**Projeto: Banco de Dados de Biblioteca (MySQL)**  
+
+Este projeto é um exercício de modelagem de dados e prática de SQL, focado na criação de um banco de dados simples para um sistema de biblioteca.  
+O esquema foi desenvolvido utilizando o MySQL Workbench.  
+
+🎯 Objetivo principal:  
+Aplicar e revisar conceitos de banco de dados relacionais, normalização, relacionamentos e consultas SQL (SELECT, JOIN, filtros, etc).
 
 ---
 
